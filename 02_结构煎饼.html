@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .parent{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .parent .son{
+            flex: 1 1 500px;
+            margin: 5px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="son">
+        盒子
+    </div>
+    <div class="son">
+        盒子
+    </div>
+    <div class="son">
+        盒子
+    </div>
+</div>
+</body>
+</html>

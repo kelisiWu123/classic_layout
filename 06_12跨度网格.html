@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            height: 100%;
+            width: 100%;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .span-12 {
+            /*加上span就是表示跨越12*/
+            grid-column: 1 / span 12;
+            background-color: #cdf4c8;
+        }
+
+        .span-6 {
+            grid-column: 1 / span 6;
+            background-color: #fbcaae;
+        }
+
+        .span-4 {
+            grid-column: 4 / span 3;
+            background-color: #a1e1e9;
+        }
+
+        .span-2 {
+            grid-column: 5 / span 2;
+            background-color: #feeab9;
+        }
+
+        /* centering text */
+        .section {
+            display: grid;
+            place-items: center;
+            text-align: center
+        }
+    </style>
+</head>
+<body>
+<div class="parent white">
+    <div class="span-12 green section">Span 12</div>
+    <div class="span-6 coral section">Span 6</div>
+    <div class="span-4 blue section">Span 4</div>
+    <div class="span-2 yellow section">Span 2</div>
+</div>
+</body>
+</html>

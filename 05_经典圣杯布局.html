@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .parent {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template: auto 1fr auto / auto 1fr auto;
+        }
+
+        header {
+            padding: 2rem;
+            grid-column: 1 / 4;
+            background-color: #f1d9e7;
+        }
+
+        .left-side {
+            grid-column: 1 / 2;
+            background-color: #aae3e7;
+        }
+
+         main {
+            grid-column: 2 / 3;
+            background-color: #eebda4;
+        }
+
+        .right-side {
+            grid-column: 3 / 4;
+            background-color: #fae6af;
+        }
+
+        footer {
+            grid-column: 1 / 4;
+            background-color: #718366;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <header class="pink section">Header</header>
+    <div class="left-side blue section" contenteditable>Left Sidebar</div>
+    <main class="section coral" contenteditable> Main Content</main>
+    <div class="right-side yellow section" contenteditable>Right Sidebar</div>
+    <footer class="green section">Footer</footer>
+</div>
+</body>
+</html>

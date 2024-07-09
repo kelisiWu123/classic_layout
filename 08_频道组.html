@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .pink{
+            background-color: #f8e0e8;
+        }
+        .blue{
+            background-color: #a1e1e9;
+        }
+        .green{
+            background-color: #cdf4c8;
+        }
+        .yellow{
+            background-color: #feeab9;
+        }
+        .parent {
+            height: auto;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .visual {
+            height: 100px;
+            width: 100%;
+        }
+
+         .card {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            justify-content: space-between;
+        }
+
+         h3 {
+            margin: 0
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="parent white">
+        <div class="card yellow">
+            <h3>Title - Card 1</h3>
+            <p contenteditable>Medium length description with a few more words here.</p>
+            <div class="visual pink"></div>
+        </div>
+        <div class="card yellow">
+            <h3>Title - Card 2</h3>
+            <p contenteditable>Long Description. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <div class="visual blue"></div>
+        </div>
+        <div class="card yellow">
+            <h3>Title - Card 3</h3>
+            <p contenteditable>Short Description.</p>
+            <div class="visual green"></div>
+        </div>
+    <!-- <div style="background-color: #42b883">
+
+    </div> -->
+</div>
+</body>
+</html>
